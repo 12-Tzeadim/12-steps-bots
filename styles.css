@@ -126,6 +126,7 @@ header h1 {
 
 .bot-info h1 {
     color: var(--primary-color);
+    padding-top: 0; /* הוסף את השורה הזו כדי לבטל את הריפוד העליון גם כאן */
     margin-top: 0;
 }
 
