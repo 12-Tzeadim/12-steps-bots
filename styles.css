@@ -28,7 +28,7 @@ body::before {
     background-size: 50%; 
     background-repeat: repeat;
     background-position: center top;
-    filter: blur(5px); /* הורדתי טיפ-טיפה את הטשטוש כדי שהצבעים יהיו ברורים יותר */
+    filter: blur(3px); /* הורדתי טיפ-טיפה את הטשטוש כדי שהצבעים יהיו ברורים יותר */
     z-index: -1; 
 }
 
