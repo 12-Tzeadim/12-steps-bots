@@ -1,17 +1,39 @@
 :root {
-    --primary-color: #2c3e50;
-    --secondary-color: #3498db;
-    --bg-color: #f8f9fa;
-    --text-color: #333;
-    --card-bg: #ffffff;
+    /* פלטת צבעים רגועה וממוקדת שמתאימה לתוכנית */
+    --primary-color: #2c3e50; /* כחול-אפור עמוק לכותרות */
+    --secondary-color: #4a90e2; /* כחול רך לכפתורים והדגשות */
+    --text-color: #333333;
+    --card-bg: #ffffff; /* צבע אחיד לבן ונקי לאריחים */
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
     color: var(--text-color);
     margin: 0;
     padding: 0;
+    
+    /* הגדרת תמונת הרקע */
+    background-image: url('collage-bg.png'); /* ודא שהשם תואם לקובץ שהעלית */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* שומר שהרקע יישאר במקום כשגוללים למטה */
+    position: relative;
+    z-index: 0;
+}
+
+/* שכבת הטשטוש וההבהרה מעל תמונת הרקע */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* צבע לבן חצי שקוף - אפשר לשנות את ה-0.88 כדי לעשות את זה אטום או שקוף יותר */
+    background-color: rgba(255, 255, 255, 0.88); 
+    backdrop-filter: blur(8px); /* אפקט הטשטוש של תמונת הרקע */
+    z-index: -1; /* מוודא שהשכבה נשארת מאחורי התוכן */
+
 }
 
 header {
