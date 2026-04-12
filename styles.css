@@ -133,14 +133,12 @@ header h1 {
 .info-section {
     margin-bottom: 1.5rem;
     padding-top: 0; /* הוסף את השורה הזו כדי לבטל את הריפוד העליון גם כאן */
-
 }
 
 .info-section h3 {
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
     padding-top: 0; /* הוסף את השורה הזו כדי לבטל את הריפוד העליון גם כאן */
-
 }
 
 .gem-btn {
