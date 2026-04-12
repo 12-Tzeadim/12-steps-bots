@@ -26,7 +26,7 @@ body::before {
     /* הקטנו את האטימות של הלבן ל-0.55 כדי שהצבעוניות תצא החוצה */
     background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('collage-bg.png');
     /* במקום להימתח על הכל, קבענו גודל קטן יותר שחוזר על עצמו כדוגמה */
-    background-size: 1; 
+    background-size: 10%; 
     background-repeat: repeat; /* מאפשר לתמונה לחזור על עצמה */
     background-position: center top;
     filter: blur(6px); /* טשטוש נעים לעין ששומר על הצבעים */
