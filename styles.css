@@ -171,4 +171,58 @@ header h1 {
     .bot-details {
         flex-direction: column;
     }
+    
+/* הרקע שמחשיך את האתר מסביב לחלון */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* רקע שחור חצי-שקוף */
+    backdrop-filter: blur(4px); /* טשטוש קל של האתר מאחורה (אופציונלי, נראה מעולה) */
+    z-index: 99999; /* מספר גבוה מבטיח שזה יסתיר הכל */
+    
+    /* מוסתר כברירת מחדל */
+    display: none; 
+    justify-content: center;
+    align-items: center;
+}
+
+/* כשהחלון פעיל (הקלאס הזה מתווסף ע"י ה-JavaScript) */
+.modal-overlay.show {
+    display: flex;
+}
+
+/* העיצוב של החלון עצמו - בדיוק כמו ה- bot-card שלך! */
+.modal-content {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 12px; /* תואם לכרטיסיות שלך */
+    padding: 3rem;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    
+    /* אנימציית קפיצה חלקה */
+    animation: popUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.modal-content h2 {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+.modal-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+/* אנימציה */
+@keyframes popUp {
+    0% { transform: scale(0.8); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
 }
