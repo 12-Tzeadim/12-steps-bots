@@ -77,7 +77,7 @@ header h1 {
 }
 
 .card-content {
-    padding: 1.5rem;
+    padding-top: 0; /* מבטל ריפוד פנימי בחלק העליון של אזור הטקסט */
 }
 
 .card-content h2 {
