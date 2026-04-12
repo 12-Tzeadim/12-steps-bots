@@ -138,6 +138,7 @@ header h1 {
 .info-section h3 {
     color: var(--secondary-color);
     margin-bottom: 0.5rem;
+    margin-top: 0; /* הוסף את השורה הזו כדי למחוק את הרווח מעל הכותרת */
 }
 
 .gem-btn {
