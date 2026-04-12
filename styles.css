@@ -23,13 +23,12 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* הקטנו את האטימות של הלבן ל-0.55 כדי שהצבעוניות תצא החוצה */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('collage-bg.png');
-    /* במקום להימתח על הכל, קבענו גודל קטן יותר שחוזר על עצמו כדוגמה */
+    /* החלפנו לצל שחור חצי-שקוף כדי להעמיק את הצבעים במקום להבהיר אותם */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('collage-bg.png');
     background-size: 50%; 
-    background-repeat: repeat; /* מאפשר לתמונה לחזור על עצמה */
+    background-repeat: repeat;
     background-position: center top;
-    filter: blur(6px); /* טשטוש נעים לעין ששומר על הצבעים */
+    filter: blur(5px); /* הורדתי טיפ-טיפה את הטשטוש כדי שהצבעים יהיו ברורים יותר */
     z-index: -1; 
 }
 
