@@ -171,6 +171,9 @@ header h1 {
     .bot-details {
         flex-direction: column;
     }
+}
+
+
 /* הרקע שמחשיך את האתר מסביב לחלון */
 .modal-overlay {
     position: fixed;
