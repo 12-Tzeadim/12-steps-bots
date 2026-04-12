@@ -24,7 +24,7 @@ body::before {
     width: 100%;
     height: 100%;
     /* הקטנו את האטימות של הלבן ל-0.55 כדי שהצבעוניות תצא החוצה */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)), url('collage-bg.png');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('collage-bg.png');
     /* במקום להימתח על הכל, קבענו גודל קטן יותר שחוזר על עצמו כדוגמה */
     background-size: 30%; 
     background-repeat: repeat; /* מאפשר לתמונה לחזור על עצמה */
