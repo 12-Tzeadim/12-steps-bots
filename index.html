@@ -123,5 +123,25 @@
             </div>
         </a>
     </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById('disclaimer-modal');
+        const acceptBtn = document.getElementById('accept-disclaimer');
+
+        // בודק אם המשתמש כבר אישר בעבר
+        if (!localStorage.getItem('disclaimerAccepted')) {
+            // אם לא אישר - מציג את החלון ומונע גלילה של האתר מאחור
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; 
+        }
+
+        // כשלוחצים על הכפתור
+        acceptBtn.addEventListener('click', function() {
+            modal.classList.remove('show'); // מעלים את החלון
+            document.body.style.overflow = ''; // מחזיר את יכולת הגלילה
+            localStorage.setItem('disclaimerAccepted', 'true'); // שומר את האישור
+        });
+    });
+</script>    
 </body>
 </html>
