@@ -13,7 +13,6 @@ body {
     padding: 0;
     min-height: 100vh;
     position: relative;
-    /* מנקים את הרקע מה-body עצמו כדי למנוע כפילויות */
     background: none; 
 }
 
@@ -24,13 +23,14 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    /* כאן אנחנו שמים גם את התמונה וגם את שכבת הצבע */
-    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)), url('collage-bg.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    filter: blur(5px); /* טשטוש קל יותר */
-    z-index: -1; /* שומר שהכל יהיה מאחורי התוכן */
+    /* הקטנו את האטימות של הלבן ל-0.55 כדי שהצבעוניות תצא החוצה */
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url('collage-bg.png');
+    /* במקום להימתח על הכל, קבענו גודל קטן יותר שחוזר על עצמו כדוגמה */
+    background-size: 50%; 
+    background-repeat: repeat; /* מאפשר לתמונה לחזור על עצמה */
+    background-position: center top;
+    filter: blur(6px); /* טשטוש נעים לעין ששומר על הצבעים */
+    z-index: -1; 
 }
 
 header {
