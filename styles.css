@@ -184,12 +184,6 @@ position: fixed;
     z-index: 999999;
     display: none; 
 }
-    
-    /* מוסתר כברירת מחדל */
-    display: none; 
-    justify-content: center;
-    align-items: center;
-}
 
 /* כשהחלון פעיל (הקלאס הזה מתווסף ע"י ה-JavaScript) */
 .modal-overlay.show {
