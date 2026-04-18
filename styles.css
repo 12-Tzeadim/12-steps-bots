@@ -32,6 +32,11 @@ body::before {
     z-index: -1; 
 }
 
+/* הגדרת רקע ייעודית לדפים באנגלית */
+html[lang="en"] body::before {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('en/collage-bg-en.png');
+}
+
 header {
     text-align: center;
     padding: 3rem 1rem;
