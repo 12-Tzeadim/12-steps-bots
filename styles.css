@@ -289,3 +289,15 @@ header h1 {
     max-width: 100%;
     height: auto;
 }
+
+.bot-page-container {
+    max-width: 800px; /* Use max-width instead of width */
+    width: 100%;      /* Add this so it shrinks on mobile */
+    margin: 0 auto;
+    box-sizing: border-box; /* Add this to prevent padding from blowing out the width */
+}
+
+.bot-details {
+    max-width: 100%; 
+    box-sizing: border-box;
+}
