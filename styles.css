@@ -191,9 +191,10 @@ header h1 {
 @media (max-width: 768px) {
     .bot-details {
         flex-direction: column;
+        gap: 1.5rem; /* מקטין את הרווח בין התמונה לטקסט בנייד */
+        padding: 1.5rem; /* מקטין את הריפוד הפנימי בנייד */
     }
 }
-
 
 /* הרקע שמחשיך את האתר מסביב לחלון */
 .modal-overlay {
@@ -289,9 +290,3 @@ header h1 {
 }
 
 /* ... all your other existing styles will be up here ... */
-
-/* Mobile Fix for Bot Illustration */
-.bot-illustration img {
-    max-width: 100%;
-    height: auto;
-}
