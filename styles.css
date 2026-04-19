@@ -281,3 +281,11 @@ header h1 {
     color: #ccc;
     user-select: none;
 }
+
+/* ... all your other existing styles will be up here ... */
+
+/* Mobile Fix for Bot Illustration */
+.bot-illustration img {
+    max-width: 100%;
+    height: auto;
+}
