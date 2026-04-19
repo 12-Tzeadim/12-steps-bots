@@ -93,8 +93,10 @@ header h1 {
 /* עיצוב העמוד הפנימי של הבוט */
 .bot-page-container {
     max-width: 1000px;
+    width: 100%; /* מונע גלישה הצידה בנייד */
     margin: 0 auto;
     padding: 2rem;
+    box-sizing: border-box; /* שומר שהריפוד לא יגדיל את רוחב האלמנט */
 }
 
 .back-link {
@@ -122,6 +124,8 @@ header h1 {
     padding: 2rem;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    max-width: 100%; /* מונע גלישה */
+    box-sizing: border-box;
 }
 
 .bot-illustration {
@@ -130,6 +134,8 @@ header h1 {
 
 .bot-illustration img {
     width: 100%;
+    max-width: 100%; /* הוספנו לפה את התיקון של התמונה */
+    height: auto;
     border-radius: 8px;
 }
 
@@ -288,16 +294,4 @@ header h1 {
 .bot-illustration img {
     max-width: 100%;
     height: auto;
-}
-
-.bot-page-container {
-    max-width: 800px; /* Use max-width instead of width */
-    width: 100%;      /* Add this so it shrinks on mobile */
-    margin: 0 auto;
-    box-sizing: border-box; /* Add this to prevent padding from blowing out the width */
-}
-
-.bot-details {
-    max-width: 100%; 
-    box-sizing: border-box;
 }
